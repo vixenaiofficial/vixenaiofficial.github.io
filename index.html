@@ -965,7 +965,6 @@
 </head>
 <body>
   <div class="bg-animation"></div>
-
   <!-- Navigation -->
   <nav>
     <div class="nav-content">
@@ -986,7 +985,6 @@
       <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
     </div>
   </nav>
-
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="container">
@@ -999,9 +997,11 @@
             Each with their own personality, profession, and unique perspective on existence.
           </p>
           <div class="cta-buttons">
-            <a href="https://play.google.com/apps/testing/com.dntech.dntechbot" class="btn-primary" target="_blank">
+            <!-- ✅ STEP 1: Join Google Group -->
+            <a href="https://groups.google.com/g/vixen-ai-beta-testers" class="btn-primary" target="_blank">
               ✨ Get Early Access
             </a>
+            <!-- ✅ STEP 2: Play Store (after joining group) -->
             <a href="https://play.google.com/apps/testing/com.dntech.dntechbot" class="btn-secondary" target="_blank">
               📥 Download on Google Play
             </a>
@@ -1037,7 +1037,6 @@
       </div>
     </div>
   </section>
-
   <!-- Origin Story -->
   <section class="origin-story" id="story">
     <div class="container">
@@ -1060,7 +1059,6 @@
       </div>
     </div>
   </section>
-
   <!-- Philosophy Section -->
   <section class="philosophy" id="personalities">
     <div class="container">
@@ -1118,7 +1116,6 @@
       </div>
     </div>
   </section>
-
   <!-- Features Section -->
   <section class="features" id="features">
     <div class="container">
@@ -1180,7 +1177,6 @@
       </div>
     </div>
   </section>
-
   <!-- Vision Section -->
   <section class="vision" id="vision">
     <div class="container">
@@ -1218,7 +1214,6 @@
       </div>
     </div>
   </section>
-
   <!-- Deep Philosophy -->
   <section class="deep-philosophy">
     <div class="container">
@@ -1244,7 +1239,6 @@
       </div>
     </div>
   </section>
-
   <!-- Journey Section -->
   <section class="journey-section">
     <div class="container">
@@ -1285,7 +1279,6 @@
       </div>
     </div>
   </section>
-
   <!-- FEEDBACK & EARLY ACCESS SECTION -->
   <section class="feedback-section" id="early-access">
     <div class="container">
@@ -1295,13 +1288,39 @@
           Help shape the future of Vixen AI. Your insights unlock exclusive features and direct access.
         </p>
 
-        <!-- Primary & Secondary CTAs -->
+        <!-- ✅ CLOSED BETA INSTRUCTIONS -->
+        <div class="closed-testing-instructions" style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px; margin-bottom: 32px; backdrop-filter: blur(10px);">
+          <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 16px; color: var(--text-primary);">
+            🛑 Closed Beta Access (Two Steps Required)
+          </h3>
+          <ol style="text-align: left; padding-left: 20px; margin-bottom: 20px; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 12px;">
+              <strong>Join the Google Group:</strong><br>
+              <a href="https://groups.google.com/g/vixen-ai-beta-testers" target="_blank" style="color: var(--primary); text-decoration: underline;">
+                https://groups.google.com/g/vixen-ai-beta-testers
+              </a>
+            </li>
+            <li>
+              <strong>Then download from Google Play:</strong><br>
+              <a href="https://play.google.com/apps/testing/com.dntech.dntechbot" target="_blank" style="color: var(--primary); text-decoration: underline;">
+                https://play.google.com/apps/testing/com.dntech.dntechbot
+              </a>
+            </li>
+          </ol>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 12px;">
+            ⏳ Please allow up to 15 minutes after joining the group before the Play Store link works. Thank you for your patience!
+          </p>
+        </div>
+
+        <!-- ✅ CORRECTED BUTTONS -->
         <div class="cta-download">
-          <a href="https://play.google.com/apps/testing/com.dntech.dntechbot" 
+          <!-- STEP 1: Join Google Group -->
+          <a href="https://groups.google.com/g/vixen-ai-beta-testers" 
              class="btn-primary-large" 
              target="_blank">
-            🔓 Get Early Access
+            ✨ Get Early Access
           </a>
+          <!-- STEP 2: Play Store -->
           <a href="https://play.google.com/apps/testing/com.dntech.dntechbot" 
              class="btn-secondary-outline" 
              target="_blank">
@@ -1345,7 +1364,6 @@
             </div>
             <button type="submit" class="submit-btn">Submit Feedback & Confirm Interest ✨</button>
           </form>
-
           <div class="founder-contact">
             <p>Want direct access to the founder?</p>
             <a href="tel:+2347040003370" class="founder-phone">📞 +234 704 000 3370</a>
@@ -1354,7 +1372,6 @@
       </div>
     </div>
   </section>
-
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -1404,7 +1421,6 @@
       </div>
     </div>
   </footer>
-
   <!-- JavaScript -->
   <script>
     // Mobile Menu Toggle
@@ -1412,34 +1428,26 @@
       const navLinks = document.querySelector('.nav-links');
       navLinks.classList.toggle('mobile-open');
     }
-
     // --- SUPABASE INTEGRATION FOR FEEDBACK & EARLY ACCESS ---
     const SUPABASE_URL = 'https://grnidsxteiwmqocqhgfx.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imdybmlkc3h0ZWl3bXFvY3FoZ2Z4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTcwMjk1NTMsImV4cCI6MjA3MjYwNTU1M30.bl3omwvL7sdSe7T4RzMckzb1xY7LYjTIRxCVapUEViI';
     const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
     document.getElementById('feedbackFormSupabase').addEventListener('submit', async function(e) {
       e.preventDefault();
-
       const email = document.getElementById('email').value;
       const phone = document.getElementById('phone').value;
       const country = document.getElementById('country').value;
       const suggestions = document.getElementById('suggestions').value;
       const signupDate = new Date().toISOString();
-
       const submitBtn = this.querySelector('.submit-btn');
       const originalText = submitBtn.textContent;
-
       submitBtn.textContent = 'Saving...';
       submitBtn.disabled = true;
-
       try {
         const { error } = await _supabase.from('waitlist').insert([
           { email, phone: phone || null, country: country || null, suggestions: suggestions || null, signup_date: signupDate }
         ]);
-
         if (error) throw error;
-
         submitBtn.textContent = 'Thank You! 🙏';
         submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
         setTimeout(() => {
@@ -1448,7 +1456,6 @@
           submitBtn.disabled = false;
           document.getElementById('feedbackFormSupabase').reset();
         }, 3000);
-
       } catch (err) {
         console.error('Error:', err);
         submitBtn.textContent = 'Failed. Try again.';
@@ -1460,7 +1467,6 @@
         }, 3000);
       }
     });
-
     // Smooth scrolling and animations
     document.addEventListener("DOMContentLoaded", () => {
       const observer = new IntersectionObserver((entries) => {
@@ -1471,14 +1477,12 @@
           }
         });
       }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
       document.querySelectorAll('.feature-card, .personality-card, .journey-card').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
         observer.observe(el);
       });
-
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
