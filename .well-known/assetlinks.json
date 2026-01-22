@@ -1,0 +1,26 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.dntech.videosaver.nowatermark",
+      "sha256_cert_fingerprints": ["52:E1:60:FC:58:67:9F:A4:93:7D:C8:AB:87:9B:48:D2:30:43:A2:10:CE:DD:AC:E9:7B:B4:EF:A1:84:FE:EF:E1"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.dntech.dntechbot",
+      "sha256_cert_fingerprints": ["AC:F9:FB:76:86:DC:95:B7:BA:69:64:46:5B:A4:76:A0:60:0B:49:B1:02:47:62:CB:1A:CB:28:B1:74:CB:8F:00"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.dntech.pdfaistudyflash",
+      "sha256_cert_fingerprints": ["54:46:7B:C1:5E:A8:0C:24:8D:C9:AC:A0:3D:EE:B2:8A:03:39:60:02:96:15:64:0C:A6:4B:5A:4B:04:10:42:B1"]
+    }
+  }
+]
